@@ -39,7 +39,7 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
+  - MOUSE
   - {t: '$$mdi:keyboard-esc$$', h: SCROLL}
   - {t: MENU RIGHT, h: FUN}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
