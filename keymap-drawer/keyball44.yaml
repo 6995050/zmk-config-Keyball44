@@ -39,7 +39,7 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: QWRT-FULL, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-esc$$', h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
@@ -354,7 +354,7 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - {t: QWRT-FULL, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: QWRT-FULL, h: '$$mdi:gesture-tap-hold$$', type: held}
   - {t: '$$mdi:keyboard-esc$$', h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
