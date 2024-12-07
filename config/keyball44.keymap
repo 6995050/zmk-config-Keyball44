@@ -168,6 +168,48 @@
             bindings = <&kp L &sl 1>;
             label = "L_SL";
         };
+
+        O_SL: O_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &sl 1>;
+            label = "O_SL";
+        };
+
+        P_SL: P_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &sl 1>;
+            label = "P_SL";
+        };
+
+        H_SL: H_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &sl 1>;
+            label = "H_SL";
+        };
+
+        U_SL: U_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &sl 1>;
+            label = "U_SL";
+        };
+
+        Y_SL: Y_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &sl 1>;
+            label = "Y_SL";
+        };
+
+        I_SL: I_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &sl 1>;
+            label = "I_SL";
+        };
     };
 
     keymap {
@@ -176,8 +218,8 @@
         default_layer {
             label = "MOS+QWRT";
             bindings = <
-&kp ESC    &Q_SL      &W_SL         &E_SL      &R_SL           &T_SL                   &kp Y        &kp U      &kp I      &kp O      &kp P      &BK_SL
-&kp TAB    &A_SL      &kp S         &kp D      &kp F           &kp G                   &kp H        &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp SEMI   &DEL_SL
+&kp ESC    &Q_SL      &W_SL         &E_SL      &R_SL           &T_SL                   &Y_SL        &U_SL      &I_SL      &O_SL      &P_SL      &BK_SL
+&kp TAB    &A_SL      &kp S         &kp D      &kp F           &kp G                   &H_SL        &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp SEMI   &DEL_SL
 &kp LSHFT  &kp Z      &kp X         &C_SL      &kp V           &B_SL                   &kp N        &kp M      &kp COMMA  &kp DOT    &kp SLASH  &kp RET
 &kp LGUI   &kp LCTRL  &kp LEFT_ALT  &SPACE_SL  &lt 5 CAPSLOCK             &lt 4 SPACE  &lt 3 SPACE                                              &lt 6 SQT
             >;
