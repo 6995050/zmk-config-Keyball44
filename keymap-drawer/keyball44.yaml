@@ -6,11 +6,11 @@ layers:
   - '&E_SL'
   - '&R_SL'
   - '&T_SL'
-  - Y
-  - U
-  - I
-  - O
-  - P
+  - '&Y_SL'
+  - '&U_SL'
+  - '&I_SL'
+  - '&O_SL'
+  - '&P_SL'
   - '&BK_SL'
   - $$mdi:keyboard-tab$$
   - '&A_SL'
@@ -18,7 +18,7 @@ layers:
   - D
   - F
   - G
-  - H
+  - '&H_SL'
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
