@@ -67,7 +67,7 @@
             bindings = <&none>;
             key-positions = <36 37>;
             timeout-ms = <1000>;
-            layers = <9>;
+            layers = <8>;
         };
     };
 
@@ -82,8 +82,71 @@
         Q_SL: Q_SL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &sl 1>;
+            bindings = <&kp Q &sl 1>;
             label = "Q_SL";
+        };
+
+        W_SL: W_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &sl 1>;
+            label = "W_SL";
+        };
+
+        E_SL: E_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &sl 1>;
+            label = "E_SL";
+        };
+
+        R_SL: R_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &sl 1>;
+            label = "R_SL";
+        };
+
+        T_SL: T_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &sl 1>;
+            label = "T_SL";
+        };
+
+        A_SL: A_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &sl 1>;
+            label = "A_SL";
+        };
+
+        B_SL: B_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &sl 1>;
+            label = "B_SL";
+        };
+
+        C_SL: C_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &sl 1>;
+            label = "C_SL";
+        };
+
+        BK_SL: BK_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &sl 1>;
+            label = "BK_SL";
+        };
+
+        DEL_SL: DEL_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&DEL_SL &sl 1>;
+            label = "DEL_SL";
         };
     };
 
@@ -91,23 +154,22 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <
-&kp ESC       &trans     &trans    &trans     &trans          &trans                   &trans       &trans     &trans     &trans     &trans  &trans
-&kp TAB       &trans     &trans    &trans     &trans          &trans                   &trans       &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&kp LSHFT     &trans     &trans    &trans     &trans          &trans                   &trans       &trans     &trans     &trans     &trans  &trans
-&kp LEFT_WIN  &kp LCTRL  &kp LALT  &SPACE_SL  &lt 6 CAPSLOCK              &lt 4 SPACE  &lt 3 SPACE                                           &trans
-            >;
-
             label = "MOUSE+QWRT";
+            bindings = <
+&kp ESC    &Q_SL      &W_SL         &E_SL      &R_SL           &T_SL                   &kp Y        &kp U      &kp I      &kp O      &kp P      &BK_SL
+&kp TAB    &A_SL      &kp S         &kp D      &kp F           &kp G                   &kp H        &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp SEMI   &DEL_SL
+&kp LSHFT  &kp Z      &kp X         &C_SL      &kp V           &B_SL                   &kp N        &kp M      &kp COMMA  &kp DOT    &kp SLASH  &kp RET
+&kp LGUI   &kp LCTRL  &kp LEFT_ALT  &SPACE_SL  &lt 5 CAPSLOCK             &lt 4 SPACE  &lt 3 SPACE                                              &kp SQT
+            >;
         };
 
         TYPE_LAYER {
             label = "QWRT-TYPE";
             bindings = <
-&kp ESC    &Q_SL      &kp W         &kp E      &kp R           &kp T                   &kp Y        &kp U  &kp I      &kp O    &kp P      &kp BACKSPACE
-&kp TAB    &kp A      &kp S         &kp D      &kp F           &kp G                   &kp H        &kp J  &kp K      &kp L    &kp SEMI   &kp DEL
-&kp LSHFT  &kp Z      &kp X         &kp C      &kp V           &kp B                   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RET
-&kp LGUI   &kp LCTRL  &kp LEFT_ALT  &SPACE_SL  &lt 6 CAPSLOCK             &lt 4 SPACE  &lt 3 SPACE                                        &kp SQT
+&kp ESC    &Q_SL      &W_SL         &E_SL      &R_SL           &T_SL                   &kp Y        &kp U  &kp I      &kp O    &kp P      &BK_SL
+&kp TAB    &A_SL      &kp S         &kp D      &kp F           &kp G                   &kp H        &kp J  &kp K      &kp L    &kp SEMI   &DEL_SL
+&kp LSHFT  &kp Z      &kp X         &C_SL      &kp V           &B_SL                   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RET
+&kp LGUI   &kp LCTRL  &kp LEFT_ALT  &SPACE_SL  &lt 5 CAPSLOCK             &lt 4 SPACE  &lt 3 SPACE                                        &kp SQT
             >;
         };
 
@@ -141,23 +203,13 @@
             >;
         };
 
-        mouse_layer {
-            label = "MOUSE";
-            bindings = <
-&kp TAB         &kp Q         &kp W        &kp E   &kp R         &kp T                   &kp N6         &kp N7     &kp N8     &kp N9     &kp N0     &kp BACKSPACE
-&kp LEFT_SHIFT  &kp A         &kp S        &kp D   &kp F         &kp G                   &kp PAGE_UP    &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MCLK  &none
-&kp LCTRL       &kp Z         &kp X        &kp C   &kp V         &kp B                   &kp PAGE_DOWN  &none      &none      &none      &none      &kp ENTER
-&kp LEFT_WIN    &kp LEFT_ALT  &lt 2 SPACE  &tog 5  &lt 6 ESCAPE             &lt 4 ENTER  &lt 3 SPACE                                                &kp PERIOD
-            >;
-        };
-
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&kp TAB       &trans    &trans  &trans  &trans   &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT     &trans    &trans  &trans  &trans   &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL     &trans    &trans  &trans  &trans   &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_WIN  &kp LALT  &trans  &trans  &kp ESC              &trans  &trans                                  &trans
+&kp TAB       &trans    &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT     &trans    &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL     &trans    &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_WIN  &kp LALT  &trans  &trans  &none               &trans  &trans                                  &trans
             >;
         };
 
@@ -177,7 +229,7 @@
 &kp TAB           &kp Q       &kp W         &kp E      &kp R         &kp T                   &kp Y        &kp U  &kp I      &kp O    &kp P      &kp BACKSPACE
 &kp LEFT_SHIFT    &kp A       &kp S         &kp D      &kp F         &kp G                   &kp H        &kp J  &kp K      &kp L    &kp SEMI   &kp DEL
 &kp LEFT_CONTROL  &kp Z       &kp X         &kp C      &kp V         &kp B                   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RET
-&kp LGUI          &lt 2 HOME  &kp LEFT_ALT  &SPACE_SL  &lt 6 ESCAPE             &lt 4 SPACE  &lt 3 SPACE                                        &kp SQT
+&kp LGUI          &lt 2 HOME  &kp LEFT_ALT  &SPACE_SL  &lt 5 ESCAPE             &lt 4 SPACE  &lt 3 SPACE                                        &kp SQT
             >;
         };
 
@@ -187,8 +239,29 @@
 &kp ESC    &trans     &trans        &trans     &trans          &kp T                   &kp Y        &kp U      &kp I      &kp O      &kp P      &kp BACKSPACE
 &kp TAB    &kp A      &kp S         &kp D      &kp F           &kp G                   &kp H        &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp SEMI   &kp DEL
 &kp LSHFT  &kp Z      &kp X         &kp C      &kp V           &kp B                   &kp N        &kp M      &kp COMMA  &kp DOT    &kp SLASH  &kp RET
-&kp LGUI   &kp LCTRL  &kp LEFT_ALT  &SPACE_SL  &lt 6 CAPSLOCK             &lt 4 SPACE  &lt 3 SPACE                                              &kp SQT
+&kp LGUI   &kp LCTRL  &kp LEFT_ALT  &SPACE_SL  &lt 5 CAPSLOCK             &lt 4 SPACE  &lt 3 SPACE                                              &kp SQT
             >;
+        };
+
+        mouse_layer {
+            label = "MOUSE";
+            bindings = <
+&kp TAB         &kp Q         &kp W        &kp E   &kp R         &kp T                   &kp N6         &kp N7     &kp N8     &kp N9     &kp N0     &kp BACKSPACE
+&kp LEFT_SHIFT  &kp A         &kp S        &kp D   &kp F         &kp G                   &kp PAGE_UP    &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MCLK  &none
+&kp LCTRL       &kp Z         &kp X        &kp C   &kp V         &kp B                   &kp PAGE_DOWN  &none      &none      &none      &none      &kp ENTER
+&kp LEFT_WIN    &kp LEFT_ALT  &lt 2 SPACE  &tog 9  &lt 5 ESCAPE             &lt 4 ENTER  &lt 3 SPACE                                                &kp PERIOD
+            >;
+        };
+
+        default_layerbk {
+            bindings = <
+&kp ESC       &trans     &trans    &trans     &trans          &trans                   &trans       &trans     &trans     &trans     &trans  &trans
+&kp TAB       &trans     &trans    &trans     &trans          &trans                   &trans       &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&kp LSHFT     &trans     &trans    &trans     &trans          &trans                   &trans       &trans     &trans     &trans     &trans  &trans
+&kp LEFT_WIN  &kp LCTRL  &kp LALT  &SPACE_SL  &lt 5 CAPSLOCK              &lt 4 SPACE  &lt 3 SPACE                                           &trans
+            >;
+
+            label = "MOUSE+QWRTbk";
         };
     };
 };
