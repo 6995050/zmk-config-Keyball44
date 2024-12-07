@@ -27,7 +27,7 @@
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
-&sl { release-after-ms = <1500>; };
+&sl { release-after-ms = <1000>; };
 
 / {
     // custom shift using mod-morph 
@@ -144,7 +144,7 @@
         DEL_SL: DEL_SL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&DEL_SL &sl 1>;
+            bindings = <&kp DELETE &sl 1>;
             label = "DEL_SL";
         };
 
