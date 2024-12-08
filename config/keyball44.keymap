@@ -27,7 +27,7 @@
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
-&sl { release-after-ms = <1000>; };
+&sl { release-after-ms = <750>; };
 
 / {
     // custom shift using mod-morph 
@@ -64,7 +64,7 @@
         compatible = "zmk,combos";
 
         TYPING {
-            bindings = <&none>;
+            bindings = <&lt 2 SPACE>;
             key-positions = <36 37>;
             timeout-ms = <1000>;
         };
