@@ -126,8 +126,8 @@ layers:
   - {t: '3', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -451,4 +451,4 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [36, 37]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: {t: '$$mdi:keyboard-space$$', h: NUM}
