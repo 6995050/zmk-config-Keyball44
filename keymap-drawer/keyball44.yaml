@@ -43,7 +43,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
-  - {t: '$$mdi:apple-keyboard-caps$$', h: SCROLL}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: SNIPE}
   QWRT-TYPE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -268,7 +268,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   SNIPE:
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -313,7 +313,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   ALL:
   - $$mdi:keyboard-tab$$
   - Q
