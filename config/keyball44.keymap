@@ -230,7 +230,7 @@
 &kp ESC    &Q_SL      &W_SL         &E_SL      &R_SL        &T_SL                   &Y_SL        &U_SL      &I_SL      &O_SL      &P_SL      &BK_SL
 &kp TAB    &A_SL      &kp S         &kp D      &kp F        &kp G                   &H_SL        &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp SEMI   &DEL_SL
 &kp LSHFT  &kp Z      &kp X         &C_SL      &kp V        &B_SL                   &kp N        &kp M      &kp COMMA  &kp DOT    &kp SLASH  &kp RET
-&kp LGUI   &kp LCTRL  &kp LEFT_ALT  &lt 2 &SPACE_SL  &lt 5 SPACE             &lt 4 SPACE  &lt 3 SPACE                                              &lt 5 CAPSLOCK
+&kp LGUI   &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &lt 5 SPACE             &lt 4 SPACE  &lt 3 SPACE                                              &lt 5 CAPSLOCK
             >;
         };
 
