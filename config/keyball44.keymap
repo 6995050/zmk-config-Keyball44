@@ -14,7 +14,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &lt {
-    tapping-term-ms = <240>;
+    tapping-term-ms = <200>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
@@ -27,7 +27,7 @@
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
-&sl { release-after-ms = <750>; };
+&sl { release-after-ms = <500>; };
 
 / {
     // custom shift using mod-morph 
@@ -269,10 +269,10 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans         &trans    &kp UP    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &kp PAGE_DOWN  &trans    &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                                &trans
             >;
         };
 
