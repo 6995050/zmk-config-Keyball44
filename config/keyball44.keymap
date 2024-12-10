@@ -219,6 +219,69 @@
             bindings = <&kp I &sl 1>;
             label = "I_SL";
         };
+
+        S_SL: S_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &sl 1>;
+            label = "S_SL";
+        };
+
+        V_SL: V_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &sl 1>;
+            label = "V_SL";
+        };
+
+        M_SL: M_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &sl 1>;
+            label = "M_SL";
+        };
+
+        N_SL: N_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &sl 1>;
+            label = "N_SL";
+        };
+
+        D_SL: D_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &sl 1>;
+            label = "D_SL";
+        };
+
+        F_SL: F_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &sl 1>;
+            label = "F_SL";
+        };
+
+        G_SL: G_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &sl 1>;
+            label = "G_SL";
+        };
+
+        Z_SL: Z_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &sl 1>;
+            label = "Z_SL";
+        };
+
+        X_SL: X_SL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &sl 1>;
+            label = "X_SL";
+        };
     };
 
     keymap {
@@ -227,9 +290,9 @@
         default_layer {
             label = "MOS+QWRT";
             bindings = <
-&kp ESC    &Q_SL      &W_SL         &E_SL      &R_SL        &T_SL                   &Y_SL        &U_SL      &I_SL      &O_SL      &P_SL      &BK_SL
-&kp TAB    &A_SL      &kp S         &kp D      &kp F        &kp G                   &H_SL        &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp SEMI   &DEL_SL
-&kp LSHFT  &kp Z      &kp X         &C_SL      &kp V        &B_SL                   &kp N        &kp M      &kp COMMA  &kp DOT    &kp SLASH  &kp RET
+&kp ESC    &Q_SL      &W_SL         &E_SL      &R_SL        &T_SL                   &Y_SL        &U_SL      &I_SL      &O_SL      &P_SL      &kp BACKSPACE
+&lt 2 TAB  &A_SL      &S_SL         &D_SL      &F_SL        &G_SL                   &H_SL        &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp SEMI   &DEL_SL
+&kp LSHFT  &Z_SL      &X_SL         &C_SL      &V_SL        &B_SL                   &N_SL        &M_SL      &kp COMMA  &kp DOT    &kp SLASH  &kp RET
 &kp LGUI   &kp LCTRL  &kp LEFT_ALT  &SPACE_SL  &lt 5 SPACE             &lt 4 SPACE  &lt 3 SPACE                                              &lt 6 CAPSLOCK
             >;
         };
