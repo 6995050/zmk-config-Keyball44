@@ -11,13 +11,13 @@ layers:
   - '&I_SL'
   - '&O_SL'
   - '&P_SL'
-  - '&BK_SL'
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-tab$$', h: NUM}
   - '&A_SL'
-  - S
-  - D
-  - F
-  - G
+  - '&S_SL'
+  - '&D_SL'
+  - '&F_SL'
+  - '&G_SL'
   - '&H_SL'
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
@@ -25,13 +25,13 @@ layers:
   - {t: ;, s: ':'}
   - '&DEL_SL'
   - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
+  - '&Z_SL'
+  - '&X_SL'
   - '&C_SL'
-  - V
+  - '&V_SL'
   - '&B_SL'
-  - N
-  - M
+  - '&N_SL'
+  - '&M_SL'
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
@@ -102,7 +102,7 @@ layers:
   - {t: '9', s: (}
   - '*'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -126,8 +126,8 @@ layers:
   - {t: '3', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held}
+  - {type: held alternate}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
