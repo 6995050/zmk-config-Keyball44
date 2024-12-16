@@ -36,7 +36,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - LGUI
+  - RGUI
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - '&SPACE_SL'
