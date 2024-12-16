@@ -298,15 +298,15 @@
             >;
         };
 
-        TYPE_LAYER {
+        MIX_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                           &trans
             >;
 
-            label = "QWRT-TYPE";
+            label = "MIX-TYPE";
         };
 
         number_layer {
