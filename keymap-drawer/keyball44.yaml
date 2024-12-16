@@ -44,7 +44,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:apple-keyboard-caps$$', h: SNIPE}
-  QWRT-TYPE:
+  MIX-TYPE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -64,9 +64,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
