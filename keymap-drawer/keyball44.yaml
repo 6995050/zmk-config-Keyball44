@@ -19,9 +19,9 @@ layers:
   - '&F_SL'
   - '&G_SL'
   - '&H_SL'
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
+  - '&J_SL'
+  - '&K_SL'
+  - '&L_SL'
   - {t: ;, s: ':'}
   - '&DEL_SL'
   - $$mdi:apple-keyboard-shift$$
