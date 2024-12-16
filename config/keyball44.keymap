@@ -301,7 +301,7 @@
         TYPE_LAYER {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &J_SL   &K_SL   &L_SL   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
             >;
