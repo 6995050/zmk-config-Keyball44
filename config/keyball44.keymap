@@ -294,7 +294,7 @@
 &kp ESC    &Q_SL      &W_SL         &E_SL      &R_SL        &T_SL                   &Y_SL        &U_SL      &I_SL      &O_SL      &P_SL      &kp BACKSPACE
 &lt 2 TAB  &A_SL      &S_SL         &D_SL      &F_SL        &G_SL                   &H_SL        &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp SEMI   &DEL_SL
 &kp LSHFT  &Z_SL      &X_SL         &C_SL      &V_SL        &B_SL                   &N_SL        &M_SL      &kp COMMA  &kp DOT    &kp SLASH  &mt RIGHT_SHIFT ENTER
-&kp RGUI   &kp LCTRL  &kp LEFT_ALT  &SPACE_SL  &lt 5 SPACE             &lt 4 SPACE  &lt 3 SPACE                                              &lt 6 CAPSLOCK
+&kp LGUI   &kp LCTRL  &kp LEFT_ALT  &SPACE_SL  &lt 5 SPACE             &lt 4 SPACE  &lt 3 SPACE                                              &lt 6 CAPSLOCK
             >;
         };
 
