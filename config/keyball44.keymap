@@ -84,35 +84,35 @@
         SPACE_SL: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &sl 1>;
+            bindings = <&kp SPACE &sl 0>;
             label = "NEW_MACRO";
         };
 
         Q_SL: Q_SL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Q &sl 1>;
+            bindings = <&kp Q &sl 0>;
             label = "Q_SL";
         };
 
         W_SL: W_SL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &sl 1>;
+            bindings = <&kp W &sl 0>;
             label = "W_SL";
         };
 
         E_SL: E_SL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &sl 1>;
+            bindings = <&kp E &sl 0>;
             label = "E_SL";
         };
 
         R_SL: R_SL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp R &sl 1>;
+            bindings = <&kp R &sl 7>;
             label = "R_SL";
         };
 
@@ -300,10 +300,10 @@
 
         MIX_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                           &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                        &trans
             >;
 
             label = "MIX-TYPE";
@@ -359,7 +359,7 @@
             >;
         };
 
-        layer_8 {
+        FULL_TYPE {
             label = "ALL";
             bindings = <
 &kp TAB           &kp Q       &kp W         &kp E      &kp R         &kp T                   &kp Y        &kp U  &kp I      &kp O    &kp P      &kp BACKSPACE
@@ -367,27 +367,6 @@
 &kp LEFT_CONTROL  &kp Z       &kp X         &kp C      &kp V         &kp B                   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RET
 &kp LGUI          &lt 2 HOME  &kp LEFT_ALT  &SPACE_SL  &lt 5 ESCAPE             &lt 4 SPACE  &lt 3 SPACE                                        &kp SQT
             >;
-        };
-
-        TYPE_LAYERw {
-            label = "QWRT-TYPEwj";
-            bindings = <
-&kp ESC    &Q_SL      &W_SL         &E_SL      &R_SL           &T_SL                   &kp Y        &kp U  &kp I      &kp O    &kp P      &BK_SL
-&kp TAB    &A_SL      &kp S         &kp D      &kp F           &kp G                   &kp H        &kp J  &kp K      &kp L    &kp SEMI   &DEL_SL
-&kp LSHFT  &kp Z      &kp X         &C_SL      &kp V           &B_SL                   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RET
-&kp LGUI   &kp LCTRL  &kp LEFT_ALT  &SPACE_SL  &lt 5 CAPSLOCK             &lt 4 SPACE  &lt 3 SPACE                                        &kp SQT
-            >;
-        };
-
-        default_layerbk {
-            bindings = <
-&kp ESC       &trans     &trans    &trans     &trans          &trans                   &trans       &trans     &trans     &trans     &trans  &trans
-&kp TAB       &trans     &trans    &trans     &trans          &trans                   &trans       &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&kp LSHFT     &trans     &trans    &trans     &trans          &trans                   &trans       &trans     &trans     &trans     &trans  &trans
-&kp LEFT_WIN  &kp LCTRL  &kp LALT  &SPACE_SL  &lt 5 CAPSLOCK              &lt 4 SPACE  &lt 3 SPACE                                           &trans
-            >;
-
-            label = "MOUSE+QWRTbk";
         };
     };
 };
